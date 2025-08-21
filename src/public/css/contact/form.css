@@ -1,0 +1,131 @@
+body {
+    color: #8B7E74;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    position: relative;
+    padding: 30px;
+    border-bottom: 1px solid #8B7E74;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.form-group.row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    width: 150px;
+    font-weight: bold;
+    padding-top: 6px;
+}
+
+.form-input {
+    flex: 1;
+}
+
+.name-friend {
+    display: flex;
+    gap: 10px;
+}
+
+.name-friend input {
+    flex: 1;
+    min-width: 100px;
+}
+
+.required {
+    color: red;
+    margin-left: 4px;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+textarea {
+    width: 100%;
+    /* 横いっぱいに広げる */
+    height: 200px;
+    /* 高さ200pxに指定 */
+    resize: vertical;
+    /* 縦方向のみリサイズ可 */
+    background-color: #f7f2ed;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea:focus {
+    background-color: #fff3e6;
+    border-color: #8B7E74;
+    outline: none;
+}
+
+/* ボタン中央に */
+button {
+    background-color: #8B7E74;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    background-color: #f7f2ed;
+    /* 薄い茶色 */
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    background-color: #fff3e6;
+    /* フォーカス時は少し明るめ */
+    border-color: #8B7E74;
+    /* 薄茶色のアクセント */
+    outline: none;
+}
